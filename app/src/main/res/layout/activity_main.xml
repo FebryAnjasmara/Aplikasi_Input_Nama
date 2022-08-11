@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/lblNama"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:text="@string/lbl_nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp" />
+    <EditText
+        android:id="@+id/txtNama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblNama"/>
+    <Button
+        android:id="@+id/btnTampil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/gray"
+        android:layout_below="@+id/txtNama"
+        android:layout_alignParentEnd="true"
+        android:text="@string/Btn_Tampil_Nama"
+        android:onClick="TampilNama"/>
+    <TextView
+        android:id="@+id/lblTampil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnTampil"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>
